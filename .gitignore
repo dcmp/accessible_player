@@ -1,1 +1,6 @@
 .sass-cache
+build/*.js
+build/*.css
+build/*.zip
+build/*.tar.gz
+
