@@ -3,4 +3,5 @@ build/*.js
 build/*.css
 build/*.zip
 build/*.tar.gz
+node_modules
 

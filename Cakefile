@@ -1,7 +1,6 @@
 ###
 Cakefile for DCMP accessible_player
 ###
-
 {spawn, exec} = require 'child_process'
 
 task 'watch', 'Watch source files and rebuild CSS / JS', (options) ->
