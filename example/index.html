@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/example/jwplayer/jwplayer.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/lib/accessible_player.jquery.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/lib/accessible_player.jquery.css" />
+
+		<script>
+			$(document).ready(function() {
+				$("#movie-1").accessible_player({
+					movie: 'http://www.youtube.com/watch?v=G9YuKs3Jitk',
+					captions: {
+						file: '/example/G9YuKs3Jitk.srt'						
+					}
+				});
+				
+				$("#movie-2").accessible_player({
+					movie: 'http://www.youtube.com/watch?v=gupNRww6vFc',
+					captions: {
+						file: '/example/gupNRww6vFc.srt',
+						color: '#ff0000'
+					}					
+				});
+				
+				$("#movie-3").accessible_player({
+					movie: 'http://www.youtube.com/watch?v=Ys--nYjRQUA',
+					captions: {
+						file: '/example/Ys--nYjRQUA.srt',
+						back: false,
+						color: '#ffff00',
+						fontsize: 23
+					}
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<h1>Movie 1</h1>
+		<div id="movie-1"></div>
+
+		<h1>Movie 2</h1>
+		<div id="movie-2"></div>
+
+		<h1>Movie 3</h1>
+		<div id="movie-3"></div>
+	</body>
+</html>

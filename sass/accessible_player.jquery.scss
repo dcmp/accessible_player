@@ -1,0 +1,56 @@
+// The main wrapper around the widget
+$dcmpBlue: #4fc6e6;
+
+.ap-video-wrapper {
+	&:after {
+		content:".";
+		display: block;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+	}
+
+	.ap-video-controls {
+		float: left;
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+
+			li {
+				list-style-type: none;
+				padding: 0;
+				font-size: 1.0em;
+				line-height: 1.5em;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;				
+
+				a.ap-control-button {
+					background: $dcmpBlue;
+					color: #000;
+					cursor: pointer;
+					padding: 0.35em;
+					display: block;
+					width: 142px;
+					margin: 2px;
+					border: solid 1px #444;
+					pointer: cursor;
+
+					&:hover {
+						background: lighten($dcmpBlue, 15%);
+					} 
+				} // a
+			} // li
+		} // ul
+	}	 // .ap-video-controls
+
+	.ap-video-player {
+		margin: 2px;
+		float: left;
+	}
+}
