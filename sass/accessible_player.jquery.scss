@@ -16,10 +16,10 @@ $dcmpBlue: #4fc6e6;
 		ul {
 			padding: 0;
 			margin: 0;
-			list-style-type: none;
+			list-style-type: none !important;
 
 			li {
-				list-style-type: none;
+				list-style-type: none !important;
 				padding: 0;
 				font-size: 1.0em;
 				line-height: 1.5em;
@@ -40,6 +40,7 @@ $dcmpBlue: #4fc6e6;
 					margin: 2px;
 					border: solid 1px #444;
 					pointer: cursor;
+					text-decoration: none;
 
 					&:hover {
 						background: lighten($dcmpBlue, 15%);

@@ -143,8 +143,7 @@ class AccessiblePlayer extends jQueryPlugIn
 
 	render_player: =>
 		wrapper = @element.find(".ap-video-player")
-
-		jwplayer(@player_element).setup
+		player_options =
 			file: @options.movie,
 			tracks: [
 				file: @options.captions.file
@@ -156,7 +155,15 @@ class AccessiblePlayer extends jQueryPlugIn
 				color: @options.captions.color
 				fontsize: @options.captions.fontsize
 
-			height: @element.find(".ap-video-controls").height() - 4
+		console.log @options
+		if @options.width and @options.width != "auto"
+			player_options.width = @options.width
+		else
+			player_options.height = @element.find(".ap-video-controls").height() - 4			
+
+		console.log("player options: ", player_options)
+
+		jwplayer(@player_element).setup player_options
 
 	setup_event_listeners: =>
 		player = @player_element		
