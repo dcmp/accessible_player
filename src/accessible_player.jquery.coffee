@@ -131,7 +131,7 @@ class AccessiblePlayer extends jQueryPlugIn
 					<li><a aria-role="button" class="ap-control-button #{@options.buttons.caption_class}">Toggle Captions</a></li>							
 				</ul>
 			</div>
-			<div class="ap-video-player">
+			<div class="ap-video-player" aria-hidden="true">
 				<div class="ap-media-item" id="#{@player_element}">Loading....</div>
 			</div>
 		</div>
